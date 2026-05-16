@@ -14,13 +14,16 @@ public class VariantPicker {
         Random rand = new Random(seed);
         System.out.println("Your Variant");
         System.out.println();
-        System.out.println(sorts[rand.nextInt(0,sorts.length-1)]); // Elementary sort
-        System.out.println(natural[rand.nextInt(0,natural.length-1)]); // Natural order
-        System.out.println(custom[rand.nextInt(0,custom.length-1)]); // Custom order
+
+        // Исправлено: убрали "- 1", чтобы метод корректно учитывал все элементы массива
+        System.out.println(sorts[rand.nextInt(0, sorts.length)]); // Elementary sort
+        System.out.println(natural[rand.nextInt(0, natural.length)]); // Natural order
+        System.out.println(custom[rand.nextInt(0, custom.length)]); // Custom order
     }
 
-    static void main() {
-        long id = 250000; // substitute your id here
+    // Исправлено: добавлена правильная сигнатура public static void main(String[] args)
+    public static void main(String[] args) {
+        long id = 250000; // Сюда подставьте свой ID (например, номер студенческого)
         printVariant(id);
     }
 }
