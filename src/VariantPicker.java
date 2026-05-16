@@ -23,7 +23,7 @@ public class VariantPicker {
 
     // Исправлено: добавлена правильная сигнатура public static void main(String[] args)
     public static void main(String[] args) {
-        long id = 250000; // Сюда подставьте свой ID (например, номер студенческого)
+        long id = 252413; // Сюда подставьте свой ID (например, номер студенческого)
         printVariant(id);
     }
 }
